@@ -7,7 +7,7 @@ var VelibAPI = {
   	})
 	},
 	buildURL: function(stationId) {
-		return 'https://api.jcdecaux.com/vls/v1/stations/'+ stationId +'?contract=paris&apiKey=';
+		return 'https://api.jcdecaux.com/vls/v1/stations/'+ stationId +'?contract=paris&apiKey=42e7b4b2042ebdcf5a88888d3a88edfa2018fa15';
 	}
 };
 
