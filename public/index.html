@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body>
+		<div id="stations">
+		</div>
+
+		<div id="refresh">
+			<a>refresh</a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+		<script src="app.js"></script>
+		<script id="station-template" type="text/x-handlebars-template">
+	    <div id="station-{{number}}" class="{{status}}">
+	    	<h2>{{name}}</h2>
+	    	<ul>
+		    	<li>{{available_bikes}} bikes</li>
+		    	<li>{{available_bike_stands}} parkings</li>
+		    	<li>last updated {{timeAgo last_update}}</li>
+			</div>
+    </script>	
+		<script>
+			$(document).ready(function() {
+				App.init();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+#refresh {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#refresh a {
+	padding: 50px;
+}
+
+.CLOSED {
+	color: red;
+}
