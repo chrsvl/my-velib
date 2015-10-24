@@ -12,7 +12,7 @@ var VelibAPI = {
 };
 
 var App = {
-	station_ids: [7022, 8013],
+	station_ids: [7022, 8045],
 
 	init: function() {
 		$("#refresh a").click(function() {
